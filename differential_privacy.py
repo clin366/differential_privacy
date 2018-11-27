@@ -17,6 +17,8 @@ def plot_laplace(epsilon, original_count, fig_name, scalar):
     pyplot.bar(scalar, original_count, width=5, alpha = 1, label = 'original', color = "white", edgecolor = "red",linestyle = '-')
     pyplot.bar(scalar, count_laplace, width=5, alpha = 0.5, label = 'laplace',color = "white", edgecolor = "grey",linestyle = '--' )
     pyplot.legend(loc='upper right')
+    pyplot.xlabel('Age')
+    pyplot.ylabel('Count')
     pyplot.savefig(fig_name)
     pyplot.show()
 
